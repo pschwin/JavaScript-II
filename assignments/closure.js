@@ -6,7 +6,7 @@ function numberGenerator(number){
   console.log(`Here is a random number: ${rando}`);
   debugger;
 
-
+  //Rando is Closed -- Not Accessible
   function randomNumberDividedByTwo(){
     console.log(`Random number divided by two: ${rando/2}`);
     debugger;
@@ -16,7 +16,6 @@ function numberGenerator(number){
 }
 
 numberGenerator(4);
-
 
 
 
