@@ -1,6 +1,24 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function numberGenerator(number){
+  let rando = number + Math.random();
+  console.log(`Here is a random number: ${rando}`);
+  debugger;
+
+
+  function randomNumberDividedByTwo(){
+    console.log(`Random number divided by two: ${rando/2}`);
+    debugger;
+  }
+
+  randomNumberDividedByTwo();
+}
+
+numberGenerator(4);
+
+
+
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
