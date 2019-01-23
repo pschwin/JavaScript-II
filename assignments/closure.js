@@ -20,9 +20,24 @@ numberGenerator(4);
 
 
 // ==== Challenge 2: Create a counter function ====
+let newCounter = 0;
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  
+  function countItUp(){
+    newCounter ++;
+    return newCounter;
+  }
+  countItUp(); 
 };
+
+counter();
+
+
+console.log(newCounter)
+
+
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
