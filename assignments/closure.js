@@ -1,11 +1,43 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function numberGenerator(number){
+  let rando = number + Math.random();
+  console.log(`Here is a random number: ${rando}`);
+  debugger;
+
+  //Rando is Closed -- Not Accessible
+  function randomNumberDividedByTwo(){
+    console.log(`Random number divided by two: ${rando/2}`);
+    debugger;
+  }
+
+  randomNumberDividedByTwo();
+}
+
+numberGenerator(4);
+
+
 
 // ==== Challenge 2: Create a counter function ====
+let newCounter = 0;
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  
+  function countItUp(){
+    newCounter ++;
+    return newCounter;
+  }
+  countItUp(); 
 };
+
+counter();
+
+
+console.log(newCounter)
+
+
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
